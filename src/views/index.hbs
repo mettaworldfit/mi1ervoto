@@ -1,84 +1,91 @@
 {{> layout/header }}
 
-    <div class="container">
+<div class="container">
 
-        <div class="form-container">
+    <div class="form-container">
 
-            <form action="/peoples/add" method="post" id="btn-form-data">
+        <form action="/peoples/add" method="post" id="btn-form-data">
 
-                <h1 class="title">Movimiento</h1>
-                <legend class="legend">#Miprimervotoconluisabinader</legend>
+            <h1 class="title">Movimiento</h1>
+            <legend class="legend">#Miprimervotoconluisabinader</legend>
 
-                <div class="col-md-12 row mb-3">
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Nombre</label>
-                        <input type="text" name="nombre" class="form-control form-control-sm" id="" placeholder=""
-                            required>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Apellidos</label>
-                        <input type="text" name="apellidos" class="form-control form-control-sm" id="" placeholder=""
-                            required>
-                    </div>
+            <div class="col-md-12 row mb-3">
+                <div class="col-md-6">
+                    <label for="" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" class="form-control form-control-sm" id="" placeholder="" required>
                 </div>
 
+                <div class="col-md-6">
+                    <label for="" class="form-label">Apellidos</label>
+                    <input type="text" name="apellidos" class="form-control form-control-sm" id="" placeholder=""
+                        required>
+                </div>
+            </div>
 
-                <div class="col-md-12 row mb-3">
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Número de identidad</label>
-                        <input type="text" name="cedula" class="form-control form-control-sm" id="" maxlength="11"
-                            pattern="[0-9]+" placeholder="" required>
-                    </div>
 
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Fecha de nacimiento</label>
-                        <input type="date" name="fecha_nacimiento" class="form-control form-control-sm" id=""
-                            placeholder="" required>
-                    </div>
+            <div class="col-md-12 row mb-3">
+                <div class="col-md-6">
+                    <label for="" class="form-label">Número de identidad</label>
+                    <input type="text" name="cedula" class="form-control form-control-sm" id="" maxlength="11"
+                        pattern="[0-9]+" placeholder="" required>
                 </div>
 
+                <div class="col-md-6">
+                    <label for="" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" name="fecha_nacimiento" class="form-control form-control-sm" id="" placeholder=""
+                        required>
+                </div>
+            </div>
 
-                <div class="col-md-12 row mb-3">
-                    <div class="col-md-12">
-                        <label for="" class="form-label">Municipio/Provincia</label>
-                        <select class="form-control form-control-sm" name="direccion_id" id="" required>
-                            <option value="" selected disabled>Elegir</option>
-                            {{#each directions }}
-                            <option value="{{direccion_id}}">{{direccion}}</option>
-                            {{/each}}
-                        </select>
-                    </div>
+
+            <div class="col-md-12 row mb-3">
+                <div class="col-md-12">
+                    <label for="" class="form-label">Municipio/Provincia</label>
+                    <select class="form-control form-control-sm search" name="direccion_id" id="" required>
+                        <option value="" selected disabled>Elegir</option>
+                        {{#each directions }}
+                        <option value="{{direccion_id}}">{{direccion}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="col-md-12 row mb-3">
+                <div class="col-md-6">
+                    <label for="" class="form-label">Télefono 1</label>
+                    <input type="number" name="telefono1" class="form-control form-control-sm" id="" placeholder=""
+                        required>
                 </div>
 
-
-                <div class="col-md-12 row mb-3">
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Télefono 1</label>
-                        <input type="number" name="telefono1" class="form-control form-control-sm" id="" placeholder="" required>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Télefono 2</label>
-                        <input type="number" name="telefono2" class="form-control form-control-sm" id="" placeholder="">
-                    </div>
+                <div class="col-md-6">
+                    <label for="" class="form-label">Télefono 2</label>
+                    <input type="number" name="telefono2" class="form-control form-control-sm" id="" placeholder="">
                 </div>
+            </div>
 
-                <div class="col-md-12 row">
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Inscribirse</button>
-                        <a href="/peoples/form_data" class="btn btn-danger">Resetear</a>
-                    </div>
+            <div class="col-md-12 row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Inscribirse</button>
+                    <a href="/" class="btn btn-danger">Resetear</a>
                 </div>
+            </div>
 
-            </form>
+        </form>
 
-            <span class="msg-success text-success">{{ message }}</span>
-            <span class="msg-error text-danger">{{ error }}</span>
+        <div class="links">
+            <p> <a href="https://chat.whatsapp.com/LnDkgXSb0nZ5aOyMHZWjqs" class="link">Grupo de Whatsapp</a></p>
+            <p><a href="" class="link">Inscribete en el partido</a></p>
         </div>
 
 
 
+        <span class="msg-success text-success">{{ message }}</span>
+        <span class="msg-error text-danger">{{ error }}</span>
     </div>
+
+
+
+</div>
 
 {{> layout/footer }}

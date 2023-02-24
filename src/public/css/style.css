@@ -90,3 +90,25 @@ span.msg-success {
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
+.links {
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+a.link {
+    font-size: 15px;
+}
+
+p {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ced4da !important;
+}
+
+.select2-container .select2-selection--single {
+    height: calc(1.5em + 0.5rem + 1px) !important;
+}

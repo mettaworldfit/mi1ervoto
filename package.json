@@ -1,23 +1,25 @@
 {
-    "name": "api-registro",
-    "version": "1.0.0",
-    "description": "API para registrar personas",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "src/server.js",
-        "dev": "nodemon src/server.js"
-    },
-    "author": "Wilmin Jose Sanchez Francisco",
-    "license": "ISC",
-    "dependencies": {
-        "cors": "^2.8.5",
-        "express": "^4.18.2",
-        "hbs": "^4.2.0",
-        "mysql": "^2.18.1"
-    },
-    "devDependencies": {
-        "morgan": "^1.10.0",
-        "nodemon": "^2.0.20"
-    }
+  "name": "api-registro",
+  "version": "1.0.0",
+  "description": "API para registrar personas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "Wilmin Jose Sanchez Francisco",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.1.2",
+    "twilio": "^4.8.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
 }
